@@ -1,4 +1,4 @@
-package com.anncode.offersandcoupons.Model
+package com.anncode.offersandcoupons.model
 
 import com.google.gson.JsonObject
 import retrofit2.Call

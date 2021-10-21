@@ -1,4 +1,4 @@
-package com.anncode.offersandcoupons.Model
+package com.anncode.offersandcoupons.model
 
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient
