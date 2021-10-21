@@ -12,7 +12,6 @@ import retrofit2.Response
 
 class CouponRepositoryImpl(var couponPresenter: CouponPresenter): CouponRepository {
     override fun getCouponsAPI() {
-        //CONTROLLER
         var coupons: ArrayList<Coupon>? = ArrayList<Coupon>()
         val apiAdapter : ApiAdapter = ApiAdapter()
         val apiService = apiAdapter.getClientService()
@@ -31,12 +30,9 @@ class CouponRepositoryImpl(var couponPresenter: CouponPresenter): CouponReposito
                     var coupon = Coupon(jsonObject)
                     coupons?.add(coupon)
                 }
-                //VIEW
-                //VIEW
                 couponPresenter.showCoupons(coupons)
             }
 
         })
-        //CONTROLLER
     }
 }

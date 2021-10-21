@@ -28,10 +28,8 @@ class MainActivity : AppCompatActivity(), CouponView {
 
         couponPresenter = CouponPresenterImpl(this)
 
-        //VIEW
         rvCoupons = findViewById(R.id.rvCoupons)
         rvCoupons?.layoutManager = LinearLayoutManager(this)
-        //VIEW
         getCoupons()
 
     }
